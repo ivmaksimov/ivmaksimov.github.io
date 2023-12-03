@@ -1,0 +1,422 @@
+a:hover{
+text-shadow: 4px 4px 4px;
+}
+
+
+
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  .container{
+    width: 99%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    .header{
+      display: flex;
+      justify-content: space-between;
+      height: 4em;
+      margin-top: 0;
+      .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Segoe Script;
+        font-size: small;
+        // margin-top: -0.5em;
+        a{
+          text-decoration: none;
+          color: black;
+        }
+      }
+      .search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+          text-decoration: none;
+          color: black;
+          span{
+            margin-left: 0.5em;
+          }
+        }
+      }
+      .logo,.search{
+        margin-left: 2em;
+        margin-right: 2em;
+      }
+    }
+    .nav{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      border-bottom: 1px solid black;
+      border-top: 1px solid black;
+      font-size: 18px;
+      ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        li{
+          list-style:none;
+          a{
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+    }
+    .main{
+      margin-top: 3em;
+      margin-bottom: 3em;
+      align-self: center;
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      justify-content: space-around;
+      .box{
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        width: 25%;
+        height: 400px;
+        background-color: blue;
+        margin: 1em;
+        .title{
+          height: 20%;
+          text-align: center;
+          width: 100%;
+          background-color: rgba($color: #000000, $alpha: 0.6);
+          align-self: flex-end;
+          a{
+            text-decoration: none;
+            color: white;
+            font-size: small;
+            p{
+              color: white;
+              margin: 5px;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    .footer{
+      background-color: #000000;
+      color: white;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      padding: 2%;
+      font-size: small;
+      .ft-first{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        a{
+          text-decoration: none;
+          color: white;
+        }
+      }
+      .ft-seccond{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1em;
+        gap: 1em;
+        img{
+          width:1.5em;
+        }
+      }
+      .ft-third{
+        p{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.box1{
+  background-image: url(./pictures/eggs-salad.jpg);
+  background-size: cover;
+}
+.box2 {
+  background-image: url(./pictures/cheeseburger.jpg);
+}
+.box3 {
+  background-image: url(./pictures/chips-salad.jpg);
+}
+.box4 {
+  background-image: url(./pictures/cake.jpg);
+}
+.box5 {
+  background-image: url(./pictures/fresh-salad.jpg);
+}
+.box6 {
+  background-image: url(./pictures/oatmeal.jpg);
+}
+.box7 {
+  background-image: url(./pictures/pancakes.jpg);
+}
+.box8 {
+  background-image: url(./pictures/pasta1.jpg);
+}
+.box9 {
+  background-image: url(./pictures/pizza1.jpg);
+}
+@media screen and (min-width: 1201px) and (max-width: 1600px){
+  #main {
+    width: 100%;
+    .box {
+        height: 300px;
+      }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+  #main {
+    width: 100%;
+    justify-content: center;
+    .box {
+      width: 24%;
+      height: 200px;
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .header{
+    font-size: 14px;
+
+  }
+  #nav {
+    font-size: 15px;
+  }
+  #main{
+    width: 100%;
+    justify-content: space-between;
+    .box{
+      width: 39%;
+      height: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+  .header{
+    justify-content: space-between;
+    h1 {
+    font-size: 14px;
+    margin-top: 4em;
+    margin-left: -1em;
+    }
+    h3{
+    font-size: 14px;
+    margin-right: -1em;
+    }
+  }
+  .nav{
+    ul{
+      margin-left: -2em;
+      justify-content: space-evenly;
+      li{
+        
+        a {
+            font-size: 12px;
+          }
+      }
+      
+    }
+  }
+  #main{
+    width: 100%;
+    font-size: 12px;
+    .box{
+      width: 100%;
+    }
+  }
+  .footer{
+    .ft-first{
+      font-size: 12px;
+      width: 100%;
+      justify-content: space-between;
+    }
+    .ft-third {
+      font-size: 16px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .ul{
+    flex-wrap: wrap;
+  }
+  #main{
+    .box{
+      height: 300px;
+    }
+  }
+}
+
+
+// Recipe of the month
+#recipe{
+  text-align: center;
+}
+
+.recipe_of_month {
+  display: flex;
+  justify-content: space-evenly;
+
+  .left {
+    width: 60%;
+    text-align: center;
+    .ingredients {
+      display: flex;
+      img {
+        width: 60%;
+      }
+      ul{
+        li{
+          list-style: none;
+        }
+      }
+    }
+
+  }
+
+  .right {
+    width: 40%;
+    text-align: center;
+
+    .last-step {
+      border: 1px solid yellow;
+      border-radius: 20px;
+      padding: 1em;
+    }
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  #recipe{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+  #recipe {
+      width: 100%;
+      .recipe_of_month {
+        display: grid;
+        .left, .right{
+          width: 100%;
+        }
+      }
+    }
+}
+
+@media screen and (max-width: 480px){
+  #recipe {
+    width: 100%;
+    .recipe_of_month {
+      display: grid;
+      .left,
+      .right {
+        width: 100%;
+      }
+      .ingredients{
+        flex-flow: column;
+        align-items: center;
+      }
+    }
+  }
+}
+
+// FAQ style
+.faq-link{
+  text-decoration: none;
+  border-bottom: 1px solid #767676;
+  box-shadow: inset 0 -3px 0 #767676;
+  color: #000000;
+  transition: all 0.5s;
+}
+
+.faq-link:hover{
+  background-color: #a1a0a0;
+
+}
+#faq-main{
+  align-self: center;
+  width: 80%;
+  text-align: center;
+}
+#submit:hover {
+  background-color: #a1a0a0 !important; 
+  cursor: pointer;
+}
+.comment{
+  display: grid;
+  #faq-form{
+    display: grid;
+    textarea{
+      resize: none;
+    }
+    .submit{
+      padding: 1em;
+      width: 40%;
+      justify-self: center;
+      color: white;
+      background-color: #000000;
+      font-weight: bold;
+      letter-spacing: 3px;
+      transition: all 0.5s;
+    }
+  }
+  a{
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
+#comment-main {
+  align-self: center;
+  width: 80%;
+  text-align: start;
+
+  h3{
+    
+    span{
+      margin-left: 1em;
+      font-weight: normal;
+      font-size: small;
+    }
+    a{
+      text-decoration: none;
+      color: #000000;
+      font-size: small;
+      margin-left: 2em;
+    }
+  }
+    p {
+      border-bottom: 1px solid rgb(211, 209, 209);
+      padding-bottom: 1em;
+    }
+    button{
+      background-color: #767676;
+      margin-bottom: 2em;
+      transition: all 0.5s;
+      &:hover{
+        cursor: pointer;
+        background-color: #a1a0a0;
+      }
+    }
+}
+
+

@@ -1,0 +1,55 @@
+let todo = `[{
+        "task": "Learn HTML",
+        "image": "pictures/html.jpg",
+        "description": "Be nice, go to classes every day and learn HTML.",
+        "deadline": "05.07.2022",
+        "priority": 0
+    }, {
+        "task": "Learn CSS",
+        "image": "pictures/css.jpg",
+        "description": "Be active, find data and learn CSS.",
+        "deadline": "15.12.2022",
+        "priority": 0
+    }, {
+        "task": "Fix the car",
+        "image": "pictures/car.jpg",
+        "description": "Find good workshop and fix the car",
+        "deadline": "31.06.2022",
+        "priority": 0
+    }, {
+        "task": "Learn Javascript",
+        "image": "pictures/js.png",
+        "description": "Even that is hard liltle bit, need to know JS very good.",
+        "deadline": "12.08.2022",
+        "priority": 0
+    }, {
+        "task": "Summer vacation",
+        "image": "pictures/pool.jpg",
+        "description": "Find good destination for the summer vacation to be small kids frendly.",
+        "deadline": "01.07.2022",
+        "priority": 0
+    }, {
+        "task": "Winter vacation",
+        "image": "pictures/ski.jpg",
+        "description": "Organise time and find nice place with warm pool and ski slopes to go to ski.",
+        "deadline": "31.10.2022",
+        "priority": 0
+    }, {
+        "task": "Birthday party",
+        "image": "pictures/birthday.jpg",
+        "description": "Look and select a place for a Birthday party as soon as possible.",
+        "deadline": "22.06.2022",
+        "priority": 0
+    }, {
+        "task": "Register the car",
+        "image": "pictures/pickerl.jpg",
+        "description": "Get the car to the OMTC to get new registration for the folowing year.",
+        "deadline": "31.09.2022",
+        "priority": 0
+    }, {
+        "task": "Find new home",
+        "image": "pictures/house.jpg",
+        "description": "Find a new house to buy somewhere in the nature near small river and some mountains for hike",
+        "deadline": "02.05.2023",
+        "priority": 0
+    }]`;

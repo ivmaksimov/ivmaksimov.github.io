@@ -1,0 +1,533 @@
+a:hover {
+  text-shadow: 4px 4px 4px;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container {
+  width: 99%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 4em;
+  margin-top: 0;
+}
+
+body .container .header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Segoe Script;
+  font-size: small;
+}
+
+body .container .header .logo a {
+  text-decoration: none;
+  color: black;
+}
+
+body .container .header .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .header .search a {
+  text-decoration: none;
+  color: black;
+}
+
+body .container .header .search a span {
+  margin-left: 0.5em;
+}
+
+body .container .header .logo, body .container .header .search {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+body .container .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  font-size: 18px;
+}
+
+body .container .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .container .nav ul li {
+  list-style: none;
+}
+
+body .container .nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+body .container .main {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1em;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .container .main .box {
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  height: 400px;
+  background-color: blue;
+  margin: 1em;
+}
+
+body .container .main .box .title {
+  height: 20%;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+body .container .main .box .title a {
+  text-decoration: none;
+  color: white;
+  font-size: small;
+}
+
+body .container .main .box .title a p {
+  color: white;
+  margin: 5px;
+  opacity: 1;
+}
+
+body .container .footer {
+  background-color: #000000;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
+  font-size: small;
+}
+
+body .container .footer .ft-first {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .footer .ft-first a {
+  text-decoration: none;
+  color: white;
+}
+
+body .container .footer .ft-seccond {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1em;
+  gap: 1em;
+}
+
+body .container .footer .ft-seccond img {
+  width: 1.5em;
+}
+
+body .container .footer .ft-third p {
+  margin-bottom: 0;
+}
+
+.box1 {
+  background-image: url(./pictures/eggs-salad.jpg);
+  background-size: cover;
+}
+
+.box2 {
+  background-image: url(./pictures/cheeseburger.jpg);
+}
+
+.box3 {
+  background-image: url(./pictures/chips-salad.jpg);
+}
+
+.box4 {
+  background-image: url(./pictures/cake.jpg);
+}
+
+.box5 {
+  background-image: url(./pictures/fresh-salad.jpg);
+}
+
+.box6 {
+  background-image: url(./pictures/oatmeal.jpg);
+}
+
+.box7 {
+  background-image: url(./pictures/pancakes.jpg);
+}
+
+.box8 {
+  background-image: url(./pictures/pasta1.jpg);
+}
+
+.box9 {
+  background-image: url(./pictures/pizza1.jpg);
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
+  #main {
+    width: 100%;
+  }
+  #main .box {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  #main {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #main .box {
+    width: 24%;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .header {
+    font-size: 14px;
+  }
+  #nav {
+    font-size: 15px;
+  }
+  #main {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #main .box {
+    width: 39%;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header h1 {
+    font-size: 14px;
+    margin-top: 4em;
+    margin-left: -1em;
+  }
+  .header h3 {
+    font-size: 14px;
+    margin-right: -1em;
+  }
+  .nav ul {
+    margin-left: -2em;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .nav ul li a {
+    font-size: 12px;
+  }
+  #main {
+    width: 100%;
+    font-size: 12px;
+  }
+  #main .box {
+    width: 100%;
+  }
+  .footer .ft-first {
+    font-size: 12px;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .ft-third {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #main .box {
+    height: 300px;
+  }
+}
+
+#recipe {
+  text-align: center;
+}
+
+.recipe_of_month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.recipe_of_month .left {
+  width: 60%;
+  text-align: center;
+}
+
+.recipe_of_month .left .ingredients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recipe_of_month .left .ingredients img {
+  width: 60%;
+}
+
+.recipe_of_month .left .ingredients ul li {
+  list-style: none;
+}
+
+.recipe_of_month .right {
+  width: 40%;
+  text-align: center;
+}
+
+.recipe_of_month .right .last-step {
+  border: 1px solid yellow;
+  border-radius: 20px;
+  padding: 1em;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  #recipe {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #recipe {
+    width: 100%;
+  }
+  #recipe .recipe_of_month {
+    display: -ms-grid;
+    display: grid;
+  }
+  #recipe .recipe_of_month .left, #recipe .recipe_of_month .right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #recipe {
+    width: 100%;
+  }
+  #recipe .recipe_of_month {
+    display: -ms-grid;
+    display: grid;
+  }
+  #recipe .recipe_of_month .left,
+  #recipe .recipe_of_month .right {
+    width: 100%;
+  }
+  #recipe .recipe_of_month .ingredients {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.faq-link {
+  text-decoration: none;
+  border-bottom: 1px solid #767676;
+  -webkit-box-shadow: inset 0 -3px 0 #767676;
+          box-shadow: inset 0 -3px 0 #767676;
+  color: #000000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.faq-link:hover {
+  background-color: #a1a0a0;
+}
+
+#faq-main {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 80%;
+  text-align: center;
+}
+
+#submit:hover {
+  background-color: #a1a0a0 !important;
+  cursor: pointer;
+}
+
+.comment {
+  display: -ms-grid;
+  display: grid;
+}
+
+.comment #faq-form {
+  display: -ms-grid;
+  display: grid;
+}
+
+.comment #faq-form textarea {
+  resize: none;
+}
+
+.comment #faq-form .submit {
+  padding: 1em;
+  width: 40%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  color: white;
+  background-color: #000000;
+  font-weight: bold;
+  letter-spacing: 3px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.comment a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#comment-main {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 80%;
+  text-align: start;
+}
+
+#comment-main h3 span {
+  margin-left: 1em;
+  font-weight: normal;
+  font-size: small;
+}
+
+#comment-main h3 a {
+  text-decoration: none;
+  color: #000000;
+  font-size: small;
+  margin-left: 2em;
+}
+
+#comment-main p {
+  border-bottom: 1px solid #d3d1d1;
+  padding-bottom: 1em;
+}
+
+#comment-main button {
+  background-color: #767676;
+  margin-bottom: 2em;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#comment-main button:hover {
+  cursor: pointer;
+  background-color: #a1a0a0;
+}
+/*# sourceMappingURL=style.css.map */

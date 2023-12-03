@@ -1,0 +1,516 @@
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+.wrap {
+  margin: 0px;
+  width: 100%;
+  
+  display: grid;
+  /* grid-template-rows: 2% 35% 78% 20% 5%; */
+}
+
+.nav {
+display: flex;
+background-color: rgb(237, 243, 246);
+}
+
+.logo{
+  width: 2em;
+  margin-left: 20px;
+}
+
+.nav ul {
+  display: flex;
+  column-gap: clamp(1em, 3vw, 3.5em);
+  font-size: 20px;
+}
+
+.nav  li {
+  list-style: none;
+  
+  margin: 0px;
+}
+nav  a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover{
+  text-shadow: -5px 6px 7px black;
+}
+
+.btngreen{
+  background-color: green;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  border: none;
+  text-shadow: -5px 6px 7px black;
+}
+
+.btngreen:hover{
+  background-color: rgb(3, 173, 3);
+  cursor: pointer;
+}
+
+.header{
+  background-image: url(../pictures/audience-1.jpg);
+  background-size: cover;
+  background-position: center;
+  
+  color: white;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: -5px 6px 7px black;
+}
+
+.header h1{
+  font-size: 3em;
+  margin-bottom: 20px;
+  margin-top: 2em;
+}
+
+.header-main{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.icon{
+  color: green;
+  text-shadow: -5px 6px 7px black;
+  font-size: 30px;
+}
+
+.book-now-btn{
+  margin-top: 2em;
+  margin-bottom: 7em;
+}
+
+
+.main{
+  width: 60%;
+  justify-self: center;
+  display: flex ;
+  flex-flow: column;
+  /* grid-template-rows: 33% 33% 33%; */
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.stage {
+  display: flex;
+  flex-flow: column;
+  
+}
+.row{
+  display: flex;
+  column-gap: 15px;
+
+}
+
+
+
+.band{
+  width: 33%;
+  display: flex;
+  flex-flow: column;
+  border: 1px solid rgb(233, 230, 230);
+  height: 100%;
+}
+
+.img-band{
+  width: 100%;
+}
+
+.descript{
+  display: grid;
+  grid-template-columns: 30% 70% ;
+  padding-bottom: 1em;
+  height: 100%;
+}
+
+h5{
+  margin: 0;
+  margin-top: 3px;
+}
+
+.right{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.right-text{
+  height: 80%;
+}
+
+.right p {
+font-size: 15px;
+margin: 3px;
+}
+
+hr{
+  width: 95%;
+  margin-left: 0px;
+}
+
+.price-box{
+  width: 100%;
+  
+  
+}
+
+
+
+.left{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.left p {
+  margin: 2px;
+  font-size: 16px;
+}
+
+.left >:first-child {
+  color: rgb(19, 215, 19);
+}
+
+.load-more{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.load-more a {
+  text-decoration: none;
+  background-color: rgb(125, 124, 124);
+  font-size: 16px;
+  padding: 7px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  text-shadow: -5px 6px 7px black;
+}
+
+.load-more a:hover{
+  background-color: rgb(156, 154, 154);
+}
+
+
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact{
+  background-color: rgb(237, 243, 246);
+  display: flex;
+  justify-content: center;
+}
+
+.contact-first{
+  width: 50%;
+  
+}
+
+.contact-main{
+  display: flex;
+  width: 100%;
+  height: 70%;
+}
+
+.contact-left {
+  width: 40%;
+  height: 100%;
+  background-image: url(../pictures/audience-1853662.jpg);
+}
+
+.contact-right {
+  display: flex;
+  justify-content: end;
+  width: 40%;
+  text-align: center;
+}
+
+.input-form{
+  font-size: 16px;
+  text-align: left;
+  width: 80%;
+}
+
+.input{
+  width: 100%;
+}
+
+textarea{
+  width: 100%;
+}
+
+
+
+
+.footer{
+  text-align: center;
+  background-image: url(../pictures/background-313415.jpg);
+  background-position: bottom;
+  color: white;
+}
+
+.main-main{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+.side{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.review-btn{
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    text-shadow: -5px 6px 7px black;
+}
+
+.review-btn:hover{
+  background-color: rgb(53, 90, 184);
+}
+
+.review h5{
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .header-main {
+    width: 60%;
+  }
+
+  .main{
+    width: 65%;
+  }
+
+    .contact-first {
+      width: 70%;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 991.999px) {
+  
+.wrap {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .nav a {
+    font-size: 16px;
+  }
+  
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .header-main {
+    width: 70%;
+    font-size: 18px;
+  }
+
+  .book-now-btn{
+    margin-bottom: 2em;
+  }
+
+  .main{
+    width: 80%;
+    align-self: center;
+  }
+
+  
+
+  .row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .band{
+    width: 45%;
+  }
+
+  .band3{
+    display: none;
+  }
+  
+
+  .contact-first {
+    width: 70%;
+  
+  }
+
+  .contact-main {
+    flex-flow: column;
+    align-items: left;
+    height: 100%;
+  }
+  
+  .contact-left {
+    width: 100%;
+    height: 400px;
+    background-position: bottom;
+  }
+  
+  .contact-right {
+    width: 100%;
+    justify-content: left;
+  }
+
+  .input-form{
+    padding-bottom: 7em;
+  }
+}
+
+@media screen and (max-width: 767.999px) {
+  .wrap{
+    display: flex;
+    flex-flow: column;
+  }
+  
+  .logo {
+    width: 1em;
+    margin-left: 10px;
+    margin-right: 0;
+    
+  }
+
+  .btngreen {
+    background-color: green;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 10px;
+    border: none;
+    text-shadow: -5px 6px 7px black;
+  }
+  
+  .nav ul {
+    width: 80%;
+    margin-left: 2px;
+    column-gap: 5px;
+    font-size: 12px;
+  }
+
+  ul >:first-child{
+    margin-left: -3em;
+  }
+
+  .header{
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 1em;
+    width: 30%;
+  }
+  
+  .header-main {
+    width: 50%;
+    font-size: 14px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .header-main i{
+    font-size: 12px;
+  }
+
+  .book-now-btn{
+    margin-bottom: 2em;
+    font-size: 16px;
+    padding: 9px;
+  }
+
+  .main {
+    width: 95%;
+    align-self: center;
+    height: 100%;
+  }
+
+  .stage {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .row{
+    display: flex;
+    flex-flow: column;
+    gap: 1em;
+  }
+
+  .load-more{
+    margin: 1em;
+  }
+
+  .band{
+    width: 100%;
+  }
+
+  .price {
+    padding-bottom: 2em;
+  }
+
+  .contact-first {
+    width: 100%;
+    
+  }
+
+  .contact-left {
+    display: none;
+  }
+
+  .contact-right{
+    width: 90%;
+    justify-content: center;
+  }
+
+  .input-form{
+    padding-bottom: 2em;
+  }
+
+  .submit-btn{
+    font-size: 16px;
+    padding: 9px;
+  }
+
+  .footer{
+    font-size: 16px;
+  }
+
+  .side{
+    display: none;
+  }
+}
