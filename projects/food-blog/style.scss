@@ -1,73 +1,72 @@
-a:hover{
-text-shadow: 4px 4px 4px;
+a:hover {
+  text-shadow: 4px 4px 4px;
 }
 
-
-
-body{
+body {
   margin: 0;
   display: flex;
   justify-content: center;
-  .container{
+  .container {
     width: 99%;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    .header{
+    .header {
       display: flex;
       justify-content: space-between;
       height: 4em;
       margin-top: 0;
-      .logo{
+      .logo {
         display: flex;
         justify-content: center;
         align-items: center;
         font-family: Segoe Script;
         font-size: small;
         // margin-top: -0.5em;
-        a{
+        a {
           text-decoration: none;
           color: black;
         }
       }
-      .search{
+      .search {
         display: flex;
         justify-content: center;
         align-items: center;
-        a{
+        a {
           text-decoration: none;
           color: black;
-          span{
+          span {
             margin-left: 0.5em;
           }
         }
       }
-      .logo,.search{
+      .logo,
+      .search {
         margin-left: 2em;
         margin-right: 2em;
       }
     }
-    .nav{
+    .nav {
       display: flex;
       align-items: center;
       width: 100%;
       border-bottom: 1px solid black;
       border-top: 1px solid black;
       font-size: 18px;
-      ul{
+      ul {
         display: flex;
         width: 100%;
         justify-content: space-around;
-        li{
-          list-style:none;
-          a{
+        li {
+          list-style: none;
+          a {
             text-decoration: none;
             color: black;
           }
         }
       }
     }
-    .main{
+    .main {
       margin-top: 3em;
       margin-bottom: 3em;
       align-self: center;
@@ -76,7 +75,7 @@ body{
       flex-wrap: wrap;
       gap: 1em;
       justify-content: space-around;
-      .box{
+      .box {
         background-size: cover;
         background-position: center;
         display: flex;
@@ -84,17 +83,17 @@ body{
         height: 400px;
         background-color: blue;
         margin: 1em;
-        .title{
+        .title {
           height: 20%;
           text-align: center;
           width: 100%;
           background-color: rgba($color: #000000, $alpha: 0.6);
           align-self: flex-end;
-          a{
+          a {
             text-decoration: none;
             color: white;
             font-size: small;
-            p{
+            p {
               color: white;
               margin: 5px;
               opacity: 1;
@@ -103,7 +102,7 @@ body{
         }
       }
     }
-    .footer{
+    .footer {
       background-color: #000000;
       color: white;
       display: flex;
@@ -111,27 +110,27 @@ body{
       align-items: center;
       padding: 2%;
       font-size: small;
-      .ft-first{
+      .ft-first {
         width: 50%;
         display: flex;
         justify-content: space-between;
-        a{
+        a {
           text-decoration: none;
           color: white;
         }
       }
-      .ft-seccond{
+      .ft-seccond {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 1em;
         gap: 1em;
-        img{
-          width:1.5em;
+        img {
+          width: 1.5em;
         }
       }
-      .ft-third{
-        p{
+      .ft-third {
+        p {
           margin-bottom: 0;
         }
       }
@@ -139,7 +138,7 @@ body{
   }
 }
 
-.box1{
+.box1 {
   background-image: url(./pictures/eggs-salad.jpg);
   background-size: cover;
 }
@@ -167,16 +166,16 @@ body{
 .box9 {
   background-image: url(./pictures/pizza1.jpg);
 }
-@media screen and (min-width: 1201px) and (max-width: 1600px){
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
   #main {
     width: 100%;
     .box {
-        height: 300px;
-      }
+      height: 300px;
+    }
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px){
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   #main {
     width: 100%;
     justify-content: center;
@@ -188,17 +187,16 @@ body{
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .header{
+  .header {
     font-size: 14px;
-
   }
   #nav {
     font-size: 15px;
   }
-  #main{
+  #main {
     width: 100%;
     justify-content: space-between;
-    .box{
+    .box {
       width: 39%;
       height: 250px;
     }
@@ -206,41 +204,38 @@ body{
 }
 
 @media screen and (max-width: 480px) {
-  
-  .header{
+  .header {
     justify-content: space-between;
     h1 {
-    font-size: 14px;
-    margin-top: 4em;
-    margin-left: -1em;
+      font-size: 14px;
+      margin-top: 4em;
+      margin-left: -1em;
     }
-    h3{
-    font-size: 14px;
-    margin-right: -1em;
+    h3 {
+      font-size: 14px;
+      margin-right: -1em;
     }
   }
-  .nav{
-    ul{
+  .nav {
+    ul {
       margin-left: -2em;
       justify-content: space-evenly;
-      li{
-        
+      li {
         a {
-            font-size: 12px;
-          }
+          font-size: 12px;
+        }
       }
-      
     }
   }
-  #main{
+  #main {
     width: 100%;
     font-size: 12px;
-    .box{
+    .box {
       width: 100%;
     }
   }
-  .footer{
-    .ft-first{
+  .footer {
+    .ft-first {
       font-size: 12px;
       width: 100%;
       justify-content: space-between;
@@ -254,19 +249,18 @@ body{
 }
 
 @media screen and (max-width: 320px) {
-  .ul{
+  .ul {
     flex-wrap: wrap;
   }
-  #main{
-    .box{
+  #main {
+    .box {
       height: 300px;
     }
   }
 }
 
-
 // Recipe of the month
-#recipe{
+#recipe {
   text-align: center;
 }
 
@@ -277,18 +271,22 @@ body{
   .left {
     width: 60%;
     text-align: center;
+    .top {
+      width: 90%;
+      display: flex;
+      justify-content: end;
+    }
     .ingredients {
       display: flex;
       img {
         width: 60%;
       }
-      ul{
-        li{
+      ul {
+        li {
           list-style: none;
         }
       }
     }
-
   }
 
   .right {
@@ -301,28 +299,15 @@ body{
       padding: 1em;
     }
   }
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  #recipe{
+  #recipe {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px){
-  #recipe {
-      width: 100%;
-      .recipe_of_month {
-        display: grid;
-        .left, .right{
-          width: 100%;
-        }
-      }
-    }
-}
-
-@media screen and (max-width: 480px){
+@media screen and (min-width: 481px) and (max-width: 768px) {
   #recipe {
     width: 100%;
     .recipe_of_month {
@@ -331,7 +316,20 @@ body{
       .right {
         width: 100%;
       }
-      .ingredients{
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #recipe {
+    width: 100%;
+    .recipe_of_month {
+      display: grid;
+      .left,
+      .right {
+        width: 100%;
+      }
+      .ingredients {
         flex-flow: column;
         align-items: center;
       }
@@ -340,7 +338,7 @@ body{
 }
 
 // FAQ style
-.faq-link{
+.faq-link {
   text-decoration: none;
   border-bottom: 1px solid #767676;
   box-shadow: inset 0 -3px 0 #767676;
@@ -348,27 +346,26 @@ body{
   transition: all 0.5s;
 }
 
-.faq-link:hover{
+.faq-link:hover {
   background-color: #a1a0a0;
-
 }
-#faq-main{
+#faq-main {
   align-self: center;
   width: 80%;
   text-align: center;
 }
 #submit:hover {
-  background-color: #a1a0a0 !important; 
+  background-color: #a1a0a0 !important;
   cursor: pointer;
 }
-.comment{
+.comment {
   display: grid;
-  #faq-form{
+  #faq-form {
     display: grid;
-    textarea{
+    textarea {
       resize: none;
     }
-    .submit{
+    .submit {
       padding: 1em;
       width: 40%;
       justify-self: center;
@@ -379,7 +376,7 @@ body{
       transition: all 0.5s;
     }
   }
-  a{
+  a {
     text-decoration: none;
     color: #000000;
   }
@@ -390,33 +387,30 @@ body{
   width: 80%;
   text-align: start;
 
-  h3{
-    
-    span{
+  h3 {
+    span {
       margin-left: 1em;
       font-weight: normal;
       font-size: small;
     }
-    a{
+    a {
       text-decoration: none;
       color: #000000;
       font-size: small;
       margin-left: 2em;
     }
   }
-    p {
-      border-bottom: 1px solid rgb(211, 209, 209);
-      padding-bottom: 1em;
+  p {
+    border-bottom: 1px solid rgb(211, 209, 209);
+    padding-bottom: 1em;
+  }
+  button {
+    background-color: #767676;
+    margin-bottom: 2em;
+    transition: all 0.5s;
+    &:hover {
+      cursor: pointer;
+      background-color: #a1a0a0;
     }
-    button{
-      background-color: #767676;
-      margin-bottom: 2em;
-      transition: all 0.5s;
-      &:hover{
-        cursor: pointer;
-        background-color: #a1a0a0;
-      }
-    }
+  }
 }
-
-

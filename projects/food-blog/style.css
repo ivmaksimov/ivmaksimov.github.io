@@ -374,12 +374,6 @@ body .container .footer .ft-third p {
   display: flex;
 }
 
-.recipe_of_month .left .top {
-  width: 90%;
-  display: flex;
-  justify-content: end;
-}
-
 .recipe_of_month .left .ingredients img {
   width: 60%;
 }
