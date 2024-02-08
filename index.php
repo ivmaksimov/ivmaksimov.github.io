@@ -576,7 +576,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 onblur="if (this.value == '') {this.value = 'email';}">
                         </div>
                         <div class="col-md-4 contactgrid">
-                            <input type="tel" name="tel" class="text" value="phone" onfocus="this.value = '';"
+                            <input type="text"  class="text" value="phone" onfocus="this.value = '';"
                                 onblur="if (this.value == '') {this.value = 'phone';}">
                         </div>
                         <div class="col-md-8 contactgrid1">
