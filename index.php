@@ -1,6 +1,7 @@
 <!--Author: Template Stock
 Author URL: http://templatestock.co
 -->
+
 <!DOCTYPE html>
 <html>
 
@@ -38,11 +39,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 
 <body>
+    <?php
+if ($_SERVER["REQUEST_METHOD"] == 'POST') { // Check if the User coming from a request
+  $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL); // simple validation if you insert an email
+  $msg = filter_var($_POST["msg"], FILTER_SANITIZE_STRING); // simple validation if you insert a string
+
+  // mail function in php look like this  (mail(To, subject, Message, Headers, Parameters))
+  $headers = "FROM : " . $email . "\r\n";
+  $myEmail = "ivan_kratovo@hotmail.com";
+  if (mail($myEmail, "message coming from the contact form", $msg, $headers)) {
+    echo "sent";
+  } else {
+    echo "error";
+  }
+}
+?>
     <div class="header" id="head">
         <div class="container">
             <div class="header-top">
                 <div class="logo">
-                    
+
                 </div>
                 <div class="top-menu">
                     <span class="menu"> </span>
@@ -280,7 +296,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div style="width:80%"> </div>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -329,27 +345,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         <div class="tab_img">
                                             <div class="col-md-3 img-top grid_box">
                                                 <a href="http://maksimov.codefactory.live/carShopBasic/"
-                                                    title="Simple Car shop" target="_blank"> 
+                                                    title="Simple Car shop" target="_blank">
                                                     <img src="images/carshop.png" class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
                                             <div class="col-md-3 img-top grid_box">
                                                 <a href="http://maksimov.codefactory.live/game/"
-                                                    title="Simple Game Dices" target="_blank"> 
+                                                    title="Simple Game Dices" target="_blank">
                                                     <img src="images/gamejs.png" class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
-                                            <div class="col-md-3 img-top grid_box" >
+                                            <div class="col-md-3 img-top grid_box">
                                                 <a href="./projects/food-blog/" title="Food blog" target="_blank">
                                                     <img src="images/foodblog.png" class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
-                                            <div class="col-md-3 img-top grid_box" >
-                                                <a href="./projects/weekly-planner/"
-                                                    title="Image Title" target="_blank">
+                                            <div class="col-md-3 img-top grid_box">
+                                                <a href="./projects/weekly-planner/" title="Image Title"
+                                                    target="_blank">
                                                     <img src="images/planner.png" class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
@@ -362,14 +378,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                 </a>
                                             </div>
                                             <div class="col-md-3 img-top grid_box">
-                                                <a href="http://maksimov.codefactory.live/pet-shop/" title="Pet Shop" target="_blank">
+                                                <a href="http://maksimov.codefactory.live/pet-shop/" title="Pet Shop"
+                                                    target="_blank">
                                                     <img src="images/petshop.png" class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
                                             <div class="col-md-3 img-top grid_box">
-                                                <a href="#"
-                                                    title="Restaurant with shoping cart function" target="_blank">
+                                                <a href="#" title="Restaurant with shoping cart function"
+                                                    target="_blank">
                                                     <img src="images/ristorante.png" class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
@@ -382,153 +399,173 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                 </a>
                                             </div>
                                             <div class="col-md-3 img-top grid_box">
-                                                <a href="./projects/world-music-festival/"
-                                                    title="World music festival" target="_blank">
+                                                <a href="./projects/world-music-festival/" title="World music festival"
+                                                    target="_blank">
                                                     <img src="images/music.png" class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
-                                             <div class="col-md-3 img-top grid_box">
+                                            <div class="col-md-3 img-top grid_box">
                                                 <a href="./projects/auto-text-effects-anim/index.html"
                                                     title="Auto text animation" target="_blank">
-                                                    <img src="/projects/auto-text-effects-anim/Screenshot_20230123_020622.png" class="img-responsive" alt="">
+                                                    <img src="/projects/auto-text-effects-anim/Screenshot_20230123_020622.png"
+                                                        class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
-                                             <div class="col-md-3 img-top grid_box">
+                                            <div class="col-md-3 img-top grid_box">
                                                 <a href="./projects/bg-img-scroll-effect/index.html"
                                                     title="background image scroll effect" target="_blank">
-                                                    <img src="/projects/bg-img-scroll-effect/Screenshot_20230123_020951.png" class="img-responsive" alt="">
+                                                    <img src="/projects/bg-img-scroll-effect/Screenshot_20230123_020951.png"
+                                                        class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
-                                             <div class="col-md-3 img-top grid_box">
+                                            <div class="col-md-3 img-top grid_box">
                                                 <a href="./projects/blured-background-popup/index.html"
                                                     title="Blured background popup" target="_blank">
-                                                    <img src="/projects/blured-background-popup/Screenshot_20230123_021250.png" class="img-responsive" alt="">
+                                                    <img src="/projects/blured-background-popup/Screenshot_20230123_021250.png"
+                                                        class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
-                                             <div class="col-md-3 img-top grid_box">
+                                            <div class="col-md-3 img-top grid_box">
                                                 <a href="./projects/button-ripple-efect/index.html"
                                                     title="Button ripple effect" target="_blank">
-                                                    <img src="/projects/button-ripple-efect/Screenshot_20230123_022057.png" class="img-responsive" alt="">
+                                                    <img src="/projects/button-ripple-efect/Screenshot_20230123_022057.png"
+                                                        class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
-                                             <div class="col-md-3 img-top grid_box">
-                                                <a href="./projects/countdown/index.html"
-                                                    title="Countdown" target="_blank">
-                                                    <img src="/projects/countdown/Screenshot_20230123_022408.png" class="img-responsive" alt="">
+                                            <div class="col-md-3 img-top grid_box">
+                                                <a href="./projects/countdown/index.html" title="Countdown"
+                                                    target="_blank">
+                                                    <img src="/projects/countdown/Screenshot_20230123_022408.png"
+                                                        class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
-                                             <div class="col-md-3 img-top grid_box">
-                                                <a href="./projects/dark-mode-togle/index.html"
-                                                    title="Dark mode togle" target="_blank">
-                                                    <img src="/projects/dark-mode-togle/Screenshot_20230123_022546.png" class="img-responsive" alt="">
+                                            <div class="col-md-3 img-top grid_box">
+                                                <a href="./projects/dark-mode-togle/index.html" title="Dark mode togle"
+                                                    target="_blank">
+                                                    <img src="/projects/dark-mode-togle/Screenshot_20230123_022546.png"
+                                                        class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
-                                             <div class="col-md-3 img-top grid_box">
-                                                <a href="./projects/digital clock/index.html"
-                                                    title="Digital clock" target="_blank">
-                                                    <img src="/projects/digital clock/Screenshot_20230123_023753.png" class="img-responsive" alt="">
+                                            <div class="col-md-3 img-top grid_box">
+                                                <a href="./projects/digital clock/index.html" title="Digital clock"
+                                                    target="_blank">
+                                                    <img src="/projects/digital clock/Screenshot_20230123_023753.png"
+                                                        class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
-                                             <div class="col-md-3 img-top grid_box">
+                                            <div class="col-md-3 img-top grid_box">
                                                 <a href="./projects/digital-color-generator/index.html"
                                                     title="Digital color generator" target="_blank">
-                                                    <img src="/projects/digital-color-generator/Screenshot_20230123_023444.png" class="img-responsive" alt="">
+                                                    <img src="/projects/digital-color-generator/Screenshot_20230123_023444.png"
+                                                        class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
-                                             <div class="col-md-3 img-top grid_box">
-                                                <a href="./projects/drum-kits/index.html"
-                                                    title="Drum kits" target="_blank">
-                                                    <img src="/projects/drum-kits/Screenshot_20230123_024021.png" class="img-responsive" alt="">
+                                            <div class="col-md-3 img-top grid_box">
+                                                <a href="./projects/drum-kits/index.html" title="Drum kits"
+                                                    target="_blank">
+                                                    <img src="/projects/drum-kits/Screenshot_20230123_024021.png"
+                                                        class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
-                                             <div class="col-md-3 img-top grid_box">
-                                                <a href="./projects/emoji-ratings/index.html"
-                                                    title="Emoji ratings" target="_blank">
-                                                    <img src="/projects/emoji-ratings/Screenshot_20230123_024240.png" class="img-responsive" alt="">
+                                            <div class="col-md-3 img-top grid_box">
+                                                <a href="./projects/emoji-ratings/index.html" title="Emoji ratings"
+                                                    target="_blank">
+                                                    <img src="/projects/emoji-ratings/Screenshot_20230123_024240.png"
+                                                        class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
-                                             <div class="col-md-3 img-top grid_box">
+                                            <div class="col-md-3 img-top grid_box">
                                                 <a href="./projects/Heart-trail-Animation/index.html"
                                                     title="Heart trail animation" target="_blank">
-                                                    <img src="/projects/Heart-trail-Animation/Screenshot_20230123_010126.png" class="img-responsive" alt="">
+                                                    <img src="/projects/Heart-trail-Animation/Screenshot_20230123_010126.png"
+                                                        class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
-                                             <div class="col-md-3 img-top grid_box">
-                                                <a href="./projects/imsge-slider/index.html"
-                                                    title="Image slider" target="_blank">
-                                                    <img src="/projects/imsge-slider/Screenshot_20230123_024725.png" class="img-responsive" alt="">
+                                            <div class="col-md-3 img-top grid_box">
+                                                <a href="./projects/imsge-slider/index.html" title="Image slider"
+                                                    target="_blank">
+                                                    <img src="/projects/imsge-slider/Screenshot_20230123_024725.png"
+                                                        class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
-                                             <div class="col-md-3 img-top grid_box">
-                                                <a href="./projects/multyplyapp/index.html"
-                                                    title="Multyplyapp" target="_blank">
-                                                    <img src="/projects/multyplyapp/Screenshot_20230123_025102.png" class="img-responsive" alt="">
+                                            <div class="col-md-3 img-top grid_box">
+                                                <a href="./projects/multyplyapp/index.html" title="Multyplyapp"
+                                                    target="_blank">
+                                                    <img src="/projects/multyplyapp/Screenshot_20230123_025102.png"
+                                                        class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
-                                             <div class="col-md-3 img-top grid_box">
-                                                <a href="./projects/random-photos/index.html"
-                                                    title="Random photos" target="_blank">
-                                                    <img src="/projects/random-photos/Screenshot_20230123_025507.png" class="img-responsive" alt="">
+                                            <div class="col-md-3 img-top grid_box">
+                                                <a href="./projects/random-photos/index.html" title="Random photos"
+                                                    target="_blank">
+                                                    <img src="/projects/random-photos/Screenshot_20230123_025507.png"
+                                                        class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
-                                             <div class="col-md-3 img-top grid_box">
+                                            <div class="col-md-3 img-top grid_box">
                                                 <a href="./projects/real-time-charater-counter/index.html"
                                                     title="Real time charater counter" target="_blank">
-                                                    <img src="/projects/real-time-charater-counter/Screenshot_20230123_030157.png" class="img-responsive" alt="">
+                                                    <img src="/projects/real-time-charater-counter/Screenshot_20230123_030157.png"
+                                                        class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
-                                             <div class="col-md-3 img-top grid_box">
+                                            <div class="col-md-3 img-top grid_box">
                                                 <a href="./projects/rotating-image-gallery/index.html"
                                                     title="Rotating image galery" target="_blank">
-                                                    <img src="/projects/rotating-image-gallery/Screenshot_20230123_030421.png" class="img-responsive" alt="">
+                                                    <img src="/projects/rotating-image-gallery/Screenshot_20230123_030421.png"
+                                                        class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
                                             <div class="col-md-3 img-top grid_box">
-                                                <a href="./projects/Sidebar-project/index.html"
-                                                    title="Sidebar project" target="_blank">
-                                                    <img src="/projects/Sidebar-project/Screenshot_20230123_020043.png" class="img-responsive" alt="">
+                                                <a href="./projects/Sidebar-project/index.html" title="Sidebar project"
+                                                    target="_blank">
+                                                    <img src="/projects/Sidebar-project/Screenshot_20230123_020043.png"
+                                                        class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
                                             <div class="col-md-3 img-top grid_box">
-                                                <a href="./projects/sticky-navbar/index.html"
-                                                    title="Sticky navbar" target="_blank">
-                                                    <img src="/projects/sticky-navbar/Screenshot_20230123_031038.png" class="img-responsive" alt="">
+                                                <a href="./projects/sticky-navbar/index.html" title="Sticky navbar"
+                                                    target="_blank">
+                                                    <img src="/projects/sticky-navbar/Screenshot_20230123_031038.png"
+                                                        class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
                                             <div class="col-md-3 img-top grid_box">
-                                                <a href="./projects/tabs-section/index.html"
-                                                    title="Tabs section" target="_blank">
-                                                    <img src="/projects/tabs-section/Screenshot_20230123_031302.png" class="img-responsive" alt="">
+                                                <a href="./projects/tabs-section/index.html" title="Tabs section"
+                                                    target="_blank">
+                                                    <img src="/projects/tabs-section/Screenshot_20230123_031302.png"
+                                                        class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
                                             <div class="col-md-3 img-top grid_box">
-                                                <a href="./projects/video-trailer-popup/"
-                                                    title="Video trailer popup" target="_blank">
-                                                    <img src="/projects/video-trailer-popup/Screenshot_20230123_031556.png" class="img-responsive" alt="">
+                                                <a href="./projects/video-trailer-popup/" title="Video trailer popup"
+                                                    target="_blank">
+                                                    <img src="/projects/video-trailer-popup/Screenshot_20230123_031556.png"
+                                                        class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
-                                            
+
                                             <div class="clearfix"></div>
                                         </div>
 
@@ -564,19 +601,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <a href="#"><i class="icon7"></i></a>
                     <a href="#"><i class="icon8"></i></a>
                 </div>
-                
+
                 <div class="contact">
                     <form method="post" action="https://formsubmit.co/maksimov.ivan@hotmail.com">
                         <div class="col-md-4 contactgrid">
-                            <input type="text" name="name" class="text" value=" name" required onfocus="this.value = '';"
-                                onblur="if (this.value == '') {this.value = ' name';}">
+                            <input type="text" name="name" class="text" value=" name" required
+                                onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' name';}">
                         </div>
                         <div class="col-md-4 contactgrid">
-                            <input type="email" name="email" required class="text" value="email" onfocus="this.value = '';"
-                                onblur="if (this.value == '') {this.value = 'email';}">
+                            <input type="email" name="email" required class="text" value="email"
+                                onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}">
                         </div>
                         <div class="col-md-4 contactgrid">
-                            <input type="text"  class="text" value="phone" onfocus="this.value = '';"
+                            <input type="text" class="text" value="phone" onfocus="this.value = '';"
                                 onblur="if (this.value == '') {this.value = 'phone';}">
                         </div>
                         <div class="col-md-8 contactgrid1">
@@ -584,7 +621,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 onblur="if(this.value == '') this.value='Your Message';">Your Message</textarea>
                         </div>
                         <div class="col-md-4  contactgrid2">
-                            <input  type="submit" value="send message">
+                            <input type="submit" value="send message">
                         </div>
                         <div class="clearfix"></div>
                     </form>
@@ -616,7 +653,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
         </div>
     </div>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
