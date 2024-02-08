@@ -566,17 +566,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 
                 <div class="contact">
-                    <form>
+                    <form method="post" action="https://formsubmit.co/maksimov.ivan@hotmail.com">
                         <div class="col-md-4 contactgrid">
-                            <input type="text" class="text" value=" name" onfocus="this.value = '';"
+                            <input type="text" name="name" class="text" value=" name" required onfocus="this.value = '';"
                                 onblur="if (this.value == '') {this.value = ' name';}">
                         </div>
                         <div class="col-md-4 contactgrid">
-                            <input type="text" class="text" value="email" onfocus="this.value = '';"
+                            <input type="email" name="email" required class="text" value="email" onfocus="this.value = '';"
                                 onblur="if (this.value == '') {this.value = 'email';}">
                         </div>
                         <div class="col-md-4 contactgrid">
-                            <input type="text" class="text" value="phone" onfocus="this.value = '';"
+                            <input type="tel" name="tel" class="text" value="phone" onfocus="this.value = '';"
                                 onblur="if (this.value == '') {this.value = 'phone';}">
                         </div>
                         <div class="col-md-8 contactgrid1">
@@ -616,7 +616,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
         </div>
     </div>
-
+<script src="script.js"></script>
 
 </body>
 
