@@ -82,7 +82,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <div class="banner-wrap">
                                 <div class="banner_center">
                                     <h1>Ivan Maksimov</h1>
-                                    <h2>graduate at <span>Codefactory</span></h2>
+                                    <h2>graduate student at <span>Codefactory</span></h2>
                                     <h2>Vienna</h2>
                                 </div>
                             </div>
@@ -330,14 +330,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
                                         <div class="tab_img">
                                             <div class="col-md-3 img-top grid_box">
-                                                <a href="http://maksimov.codefactory.live/carShopBasic/"
+                                                <a href="/projects/car_shop/index.html"
                                                     title="Simple Car shop" target="_blank">
                                                     <img src="images/carshop.png" class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
                                             <div class="col-md-3 img-top grid_box">
-                                                <a href="http://maksimov.codefactory.live/game/"
+                                                <a href="/projects/simple_game_dices/index.html"
                                                     title="Simple Game Dices" target="_blank">
                                                     <img src="images/gamejs.png" class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
@@ -350,21 +350,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                 </a>
                                             </div>
                                             <div class="col-md-3 img-top grid_box">
-                                                <a href="./projects/weekly-planner/" title="Image Title"
+                                                <a href="/projects/weekly-planner/" title="Image Title"
                                                     target="_blank">
                                                     <img src="images/planner.png" class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
                                             <div class="col-md-3 img-top grid_box">
-                                                <a href="http://maksimov.codefactory.live/pet-adoption/"
+                                                <a href="/projects/pet_adoption/register.php"
                                                     title="Pet Adoption" target="_blank">
                                                     <img src="images/petadopt.png" class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
                                                 </a>
                                             </div>
                                             <div class="col-md-3 img-top grid_box">
-                                                <a href="http://maksimov.codefactory.live/pet-shop/" title="Pet Shop"
+                                                <a href="/projects/pet_shop/index.html" title="Pet Shop"
                                                     target="_blank">
                                                     <img src="images/petshop.png" class="img-responsive" alt="">
                                                     <span class="zoom-icon"></span>
@@ -589,25 +589,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
 
                 <div class="contact">
-                    <form method="post" action="https://formsubmit.co/maksimov.ivan@hotmail.com">
+                    <form method="POST" action="form.php">
                         <div class="col-md-4 contactgrid">
-                            <input type="text" name="name" class="text" value=" name" required
-                                onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' name';}">
+                            <input type="text" name="name" class="text" value=" name" required>
+                                
                         </div>
                         <div class="col-md-4 contactgrid">
-                            <input type="email" name="email" required class="text" value="email"
-                                onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}">
+                            <input type="email" id="email" name="email" required class="text" value="email">
                         </div>
-                        <div class="col-md-4 contactgrid">
-                            <input type="text" class="text" value="phone" onfocus="this.value = '';"
-                                onblur="if (this.value == '') {this.value = 'phone';}">
-                        </div>
+                        
                         <div class="col-md-8 contactgrid1">
-                            <textarea onfocus="if(this.value == 'Your Message') this.value='';"
-                                onblur="if(this.value == '') this.value='Your Message';">Your Message</textarea>
+                            <textarea name="msg" id="msg">Your Message</textarea>
                         </div>
                         <div class="col-md-4  contactgrid2">
-                            <input type="submit" value="send message">
+                            <input type="submit" value="send">
                         </div>
                         <div class="clearfix"></div>
                     </form>

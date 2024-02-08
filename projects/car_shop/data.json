@@ -1,0 +1,43 @@
+let cars = `[{
+    "name": "BMW",
+    "production_year": "Year 1915",
+    "img": "pics/car1.png",
+    "car_price": "$145,000",
+    "color": "Blue",
+    "transmission": "Manual transmission" 
+}, {
+    "name": "Citroen",
+    "production_year": "Year 1956",
+    "img": "pics/car2.png",
+    "car_price": "$120,000",
+    "color": "Red",
+    "transmission": "Manual transmission" 
+}, {
+    "name": "Chevrolet",
+    "production_year": "Year 1995",
+    "img": "pics/car3.png",
+    "car_price": "$75,000",
+    "color": "Red",
+    "transmission": "Automatic transmission"  
+}, {
+    "name": "Porsche",
+    "production_year": "Year 1969",
+    "img": "pics/car4.png",
+    "car_price": "$145,000",
+    "color": "Blue",
+    "transmission": "Manual transmission"  
+}, {
+    "name": "Ford",
+    "production_year": "Year 1985",
+    "img": "pics/car5.png",
+    "car_price": "$95,000",
+    "color": "Purple",
+    "transmission": "Automatic transmission"
+}, {
+    "name": "Tesla",
+    "production_year": "Year 2032",
+    "img": "pics/car6.png",
+    "car_price": "$20,000",
+    "color": "Red",
+    "transmission": "No transmision" 
+}]`;

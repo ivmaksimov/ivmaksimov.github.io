@@ -1,0 +1,54 @@
+header {
+  display: flex;
+  width: 100%;
+  background-color: rgb(221, 221, 60);
+  justify-content: space-between;
+}
+
+#card {
+  width: 30%;
+}
+
+.nav {
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: brown;
+  margin-left: 2em;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-main {
+  display: flex;
+  justify-content: center;
+  /* background-image: url(./pics/antique-car-2663114_1920.png);
+    background-size: cover; */
+}
+
+#xbtn {
+  background-color: red;
+  border: none;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: start;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  #result {
+    flex-direction: column;
+  }
+  #card {
+    width: 80%;
+  }
+}

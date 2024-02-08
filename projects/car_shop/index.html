@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Chalenge exercise JS day 5</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-container">
+        <a class="logo" href="#">
+          <img
+            src="pics/logo.png"
+            width="130"
+            height="80"
+            class="logo-img"
+            alt="logo car"
+          />
+        </a>
+      </div>
+      <div class="header-container">
+        <h1>The Car Shop</h1>
+      </div>
+      <div class="logo-container">
+        <a class="logo" href="#">
+          <img
+            src="pics/logo.png"
+            width="130"
+            height="80"
+            class="logo-img"
+            alt="logo car"
+          />
+        </a>
+      </div>
+    </header>
+    <nav>
+      <ul class="nav">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Cars</a>
+        </li>
+        <li>
+          <a href="#">About us</a>
+        </li>
+        <li>
+          <a href="#">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main">
+      <div class="container container-main">
+        <div id="result" class="row justify-content-around"></div>
+      </div>
+      <div id="slider" data-visible="false">
+        <button id="xbtn">X</button>
+        <div
+          id="details"
+          data-visible="false"
+          class="slide-in justify-content-center"
+        ></div>
+      </div>
+    </div>
+    <footer class="bg-dark text-center text-lg-start">
+      <div class="text-center text-light p-3">
+        <p>Maksimov 2022 &copy;</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="data.json"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
