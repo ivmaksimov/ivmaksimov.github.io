@@ -4,7 +4,7 @@ const sldtEl2 = document.querySelector(".sldt2");
 const sldtEl3 = document.querySelector(".sldt3");
 const sldtEl4 = document.querySelector(".sldt4");
 
-const careers = ["Full stack developer."];
+const careers = ["I am Full Stack Web Developer."];
 const careers3 = [
   "Fast load times and lag free interaction, my highest priority.",
 ];
