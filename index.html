@@ -39,21 +39,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 
 <body>
-    <?php
-if ($_SERVER["REQUEST_METHOD"] == 'POST') { // Check if the User coming from a request
-  $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL); // simple validation if you insert an email
-  $msg = filter_var($_POST["msg"], FILTER_SANITIZE_STRING); // simple validation if you insert a string
-
-  // mail function in php look like this  (mail(To, subject, Message, Headers, Parameters))
-  $headers = "FROM : " . $email . "\r\n";
-  $myEmail = "ivan_kratovo@hotmail.com";
-  if (mail($myEmail, "message coming from the contact form", $msg, $headers)) {
-    echo "sent";
-  } else {
-    echo "error";
-  }
-}
-?>
+   
     <div class="header" id="head">
         <div class="container">
             <div class="header-top">
@@ -129,11 +115,11 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') { // Check if the User coming from a r
                         <img src="images/ivan.jpg" alt="" />
                     </div>
                     <div class="about-text">
-                        <p>I am a Full stack developer</p>
-                        <p>Fast load times and lag free interaction, my highest priority.</p>
-                        <p>My layouts will work on any device, big or small.</p>
-                        <p>Strong preference for easy to use, intuitive UX/UI.</p>
-                        <p>Websites don't have to be static, I love making pages come to life.</p>
+                        <p class="sldt">I am a Full stack developer</p>
+                        <p class="sldt1">Fast load times and lag free interaction, my highest priority.</p>
+                        <p class="sldt2">My layouts will work on any device, big or small.</p>
+                        <p class="sldt3">Strong preference for easy to use, intuitive UX/UI.</p>
+                        <p class="sldt4">Websites don't have to be static, I love making pages come to life.</p>
 
                     </div>
                     <div class="clearfix"></div>
