@@ -760,20 +760,30 @@ h2.resp-accordion {
 
 .popup-container {
   position: fixed;
-  width: 33%;
+  width: 40%;
+  height: 95%;
   top: 1%;
-  left: 50%;
-  transform: translate(-50%);
-  background-color: white;
+  left: 30%;
+
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  background-image: url(./pexels-pixabay-434337.jpg);
-  background-size: cover;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba 0, 0, 0, 0.3;
   opacity: 1;
   transition: all 0.7s;
+}
+.popup-container > img {
+  width: 100%;
+  height: 100%;
+}
+
+.popup-container:hover {
+  cursor: zoom-in;
+}
+
+.zoom.popup-container {
+  transform: scale(1.7);
+  overflow: hidden;
 }
 
 .popup-btn {
@@ -787,6 +797,7 @@ h2.resp-accordion {
 .close-icon {
   position: absolute;
   right: 20px;
+  top: 20%;
   cursor: pointer;
 }
 
@@ -940,6 +951,13 @@ h2.resp-accordion {
 
 /*-- responsive-mediaquries --*/
 @media (max-width: 1080px) {
+  .popup-container {
+    width: 35%;
+
+    left: 30%;
+  }
+}
+@media (max-width: 1080px) {
   .grid_box a:hover .zoom-icon {
     top: 15px;
   }
@@ -1022,6 +1040,10 @@ h2.resp-accordion {
   }
   .footer-bottom p a {
     font-size: 16px;
+  }
+  .popup-container {
+    width: 40%;
+    left: 30%;
   }
 }
 @media (max-width: 991px) {
@@ -1142,6 +1164,10 @@ h2.resp-accordion {
   .grid_box a:hover .zoom-icon {
     top: 12px;
   }
+  .popup-container {
+    width: 50%;
+    left: 20%;
+  }
 }
 
 /*----- resposnive-menu -----*/
@@ -1192,10 +1218,18 @@ h2.resp-accordion {
   .wmuSliderPagination {
     right: 46%;
   }
+  .popup-container {
+    width: 50%;
+    left: 20%;
+  }
 }
 @media (max-width: 736px) {
   .resp-tab-item {
     padding: 0px 7px;
+  }
+  .popup-container {
+    width: 60%;
+    left: 15%;
   }
 }
 @media (max-width: 640px) {
@@ -1320,6 +1354,10 @@ h2.resp-accordion {
   }
   .grid_box a:hover .zoom-icon {
     top: 10px;
+  }
+  .popup-container {
+    width: 60%;
+    left: 15%;
   }
 }
 @media (max-width: 480px) {
@@ -1453,15 +1491,27 @@ h2.resp-accordion {
   div#portfoliolist {
     background: none;
   }
+  .popup-container {
+    width: 70%;
+    left: 9%;
+  }
 }
 @media (max-width: 414px) {
   .resp-tab-item {
     margin: 8px 9px 0px;
   }
+  .popup-container {
+    width: 70%;
+    left: 9%;
+  }
 }
 @media (max-width: 375px) {
   .resp-tabs-list {
     margin: 13px 0;
+  }
+  .popup-container {
+    width: 85%;
+    left: -5px;
   }
 }
 @media (max-width: 320px) {
@@ -1638,5 +1688,9 @@ h2.resp-accordion {
   }
   .grid_box a:hover .zoom-icon {
     top: 7px;
+  }
+  .popup-container {
+    width: 90%;
+    left: -10px;
   }
 }

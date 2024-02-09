@@ -3,6 +3,7 @@ const sldtEl1 = document.querySelector(".sldt1");
 const sldtEl2 = document.querySelector(".sldt2");
 const sldtEl3 = document.querySelector(".sldt3");
 const sldtEl4 = document.querySelector(".sldt4");
+var classZoomActiv = false;
 
 const careers = ["I am Full Stack Web Developer."];
 const careers3 = [
@@ -44,7 +45,7 @@ function updateText() {
   // careerIndex = 0;
   //}
 
-  setTimeout(updateText, 200);
+  setTimeout(updateText, 80);
 }
 
 const msgSentEl = document.querySelector(".msgSent");
@@ -63,6 +64,7 @@ const containerEl = document.querySelector(".certif_blur");
 const popupContainerEl = document.querySelector(".popup-container");
 
 const closeIconEl = document.querySelector(".close-icon");
+const popupPicEl = document.querySelector(".popup_pic");
 
 btnEl.addEventListener("click", () => {
   containerEl.classList.add("active");
@@ -72,4 +74,16 @@ btnEl.addEventListener("click", () => {
 closeIconEl.addEventListener("click", () => {
   containerEl.classList.remove("active");
   popupContainerEl.classList.add("active");
+  popupContainerEl.classList.remove("zoom");
+  classZoomActiv = false;
+});
+
+popupPicEl.addEventListener("click", () => {
+  if (classZoomActiv === false) {
+    popupContainerEl.classList.add("zoom");
+    classZoomActiv = true;
+  } else if (classZoomActiv === true) {
+    popupContainerEl.classList.remove("zoom");
+    classZoomActiv = false;
+  }
 });
