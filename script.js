@@ -46,3 +46,12 @@ function updateText() {
 
   setTimeout(updateText, 200);
 }
+
+const msgSentEl = document.querySelector(".msgSent");
+const sbmtEl = document.querySelector(".sbmt");
+sbmtEl.addEventListener("click", () => {
+  msgSentEl.innerHTML = `Message is not sent !`;
+  setTimeout(() => {
+    msgSentEl.innerHTML = "";
+  }, 4000);
+});
