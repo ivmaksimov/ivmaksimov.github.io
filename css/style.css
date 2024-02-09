@@ -737,6 +737,71 @@ h2.resp-accordion {
   display: flex;
   justify-content: center;
 }
+
+.btn {
+  padding: 10px 20px;
+  width: 200px;
+  cursor: pointer;
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.btn:hover,
+.popup-btn:hover {
+  filter: brightness(0.8);
+}
+
+.active.container {
+  filter: blur(5px) brightness(0.7);
+}
+
+.popup-container {
+  position: fixed;
+  width: 600px;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-image: url(./pexels-pixabay-434337.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba 0, 0, 0, 0.3;
+  opacity: 1;
+  transition: all 0.7s;
+}
+
+.popup-btn {
+  background-color: orangered;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid;
+}
+
+.close-icon {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-icon:hover {
+  color: orangered;
+}
+
+.active.popup-container {
+  visibility: hidden;
+  opacity: 0;
+  top: 10%;
+}
+.active.certif_blur {
+  filter: blur(5px) brightness(0.7);
+}
+
 .social-icon a i.icon1 {
   background-position: 0px 0px;
 }
