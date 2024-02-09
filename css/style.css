@@ -727,7 +727,8 @@ h2.resp-accordion {
   -o-transition: 0.5s all;
   -ms-transition: 0.5s all;
 }
-.bi-linkedin {
+.bi-linkedin,
+.fa-github {
   font-size: 40px;
 }
 
