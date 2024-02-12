@@ -31,8 +31,19 @@ nav a {
   /* background-image: url(./pics/antique-car-2663114_1920.png);
     background-size: cover; */
 }
+#slider {
+  position: relative;
+  transform: translate(0%, -105%);
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  z-index: 2;
+}
 
 #xbtn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
   background-color: red;
   border: none;
   width: 20px;
@@ -40,8 +51,7 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-self: start;
-  margin-top: 15px;
+  z-index: 1;
 }
 
 @media screen and (max-width: 576px) {

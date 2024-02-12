@@ -106,3 +106,7 @@ label {
   opacity: 0;
   top: 10%;
 }
+
+.message {
+  text-align: center;
+}

@@ -87,3 +87,5 @@ popupPicEl.addEventListener("click", () => {
     classZoomActiv = false;
   }
 });
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
