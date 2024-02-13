@@ -56,7 +56,7 @@ h1 {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba 0, 0, 0, 0.3;
   opacity: 1;
-  transition: all 0.7s;
+  transition: all 1s;
 }
 
 h4 {
