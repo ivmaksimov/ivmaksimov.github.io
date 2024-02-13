@@ -620,10 +620,7 @@ h2.resp-accordion {
   text-align: center;
 }
 .content {
-  background-image: url(../images/pic4.jpg);
-
-  background-size: contain;
-  background-position: bottom;
+  background-color: black;
 }
 .about-section {
   padding: 3em 0;
@@ -827,9 +824,9 @@ h2.resp-accordion {
 }
 
 .footer-section {
-  background: url(../images/pic3.jpg);
+  background: url(../images/pic41.jpg);
   background-size: cover;
-  background-position: right;
+  background-position: top;
 }
 
 .social-icon a i.icon1 {
