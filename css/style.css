@@ -83,7 +83,7 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 400;
+  font-weight: 500;
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
   font-size: 1.35em;
   text-shadow: 0px 0px 17px rgba(2, 2, 2, 1);
@@ -240,7 +240,7 @@ ul.wmuSliderPagination {
 .works-section {
   padding: 3em 0;
   background: #2e3e4e;
-  background: url(../images/pic6.jpg);
+  /* background: url(../images/pic6.jpg); */
   background-position: center;
   background-size: cover;
 }

@@ -1,0 +1,37 @@
+Your tasks will be: 
+
+Music festivals are great events to visit, especially if they have different stages showcasing different bands and different kinds of music that can be alternated during a festival. This way, anyone can choose what to see or listen to. This week's Code Review example is going to take a look at that!
+
+ Correct usage of the HTML structure (proper order of HTML elements). 
+
+ Correct code structure (aka code indentation) for the HTML and Javascript code. 
+
+ Clear separation of CSS, JavaScript and images in distinct folders: css, js, img (access through relative paths). 
+
+ Correct CSS layout according to the provided design. There should be a navbar, a festival image (hero image), 3 stages subsections listing the bands, 1 subsection with the contact form and a footer. Feel free to improve and expand the design. Each band must display a name, description, date and price. Remember that the festival lasts 3 days and only one band can play at a time on a certain stage.
+
+ The subsections (stages 1, 2 and 3)  should display 3 bands in the row on larger screens, 2 bands in the row on medium screens and 1 band in the row on small/extra small screens. You are free to use either Bootstrap or implement Media Queries/FlexGrid/FlexBox to achieve this. 
+
+ The contact section must also be responsive. It is formed by 2 columns on a large screen. It should wrap into one column with the picture on top of the form on a medium screen and the image should disappear on small screens. 
+
+ Use the band prices from your website to create nine (9) variables that will hold each band ticket price. You will use these variables to calculate prices and output human-readable phrases with them. Please do not name the variables as x, y or z but rather give meaningful names. Note: You should do it manually since we didn't learn how to take values from HTML elements yet. 
+
+ Create another three(3) variables: fest_day1, fest_day2 and fest_day3. You should randomly pick three different combinations from bands playing on the same day at different times and sum them together into these variables.
+
+ Using the three variables from the previous task, three(3) phrases must be outputted in the console:
+
+On the first day of the festival, I was lucky to watch bands 1, 2 and 3. 
+
+Then I watched the bands 1, 2 and 3 on the second day and it cost me €€€€ in total that day.
+
+I was a bit tired on the third day but it was so much worth it to watch the bands 1,2 3 and I spent €€€€ for the three days of the festival.
+
+
+
+ 
+
+ If you had booked the concert with enough time in advance, you would have saved 30% on every ticket. Knowing that information, output the phrase below:
+
+If I had booked the concert with enough time in advance, it would have cost me a total of €€€€€ and I would have saved €€€€€.
+
+ Create a review page where the user can view customer reviews of the concert. The design must have the basic structure for a normal webpage: navbar, hero, content, main part and footer and it should complement the index page. This page must be accessible from the index page (e.g through the navbar or footer, or both).

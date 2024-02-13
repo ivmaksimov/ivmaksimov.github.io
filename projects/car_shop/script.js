@@ -57,3 +57,7 @@ toggle.addEventListener("click", () => {
     toggle.style.display = "none";
   }
 });
+
+var year = document.getElementById("year");
+
+year.innerHTML = new Date().getFullYear();

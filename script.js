@@ -48,15 +48,6 @@ function updateText() {
   setTimeout(updateText, 80);
 }
 
-const msgSentEl = document.querySelector(".msgSent");
-const sbmtEl = document.querySelector(".sbmt");
-sbmtEl.addEventListener("click", () => {
-  msgSentEl.innerHTML = `Message is not sent !`;
-  setTimeout(() => {
-    msgSentEl.innerHTML = "";
-  }, 4000);
-});
-
 const btnEl = document.querySelector(".btn");
 
 const containerEl = document.querySelector(".certif_blur");
@@ -88,4 +79,6 @@ popupPicEl.addEventListener("click", () => {
   }
 });
 
-document.getElementById("year").innerHTML = new Date().getFullYear();
+var year = document.getElementById("year");
+
+year.innerHTML = new Date().getFullYear();

@@ -1,0 +1,9 @@
+Ex Description:
+
+Many people love games of chance and especially the thrill of  "roll of the dice". For this exercise, create a page with a two-sided layout for two players based on the idea of "roll of the dice".
+
+When the page loads, a prompt method should appear to receive a string (the name for each player), then display their names in the header of the page, for example, "Thomas vs. Martin".
+
+In each half of the layout, place a button that calls a function. This function should create one random number. Next, display the number separately and visually appealing in each player's half, so that the player can see what they "rolled". Once both players have rolled, announce the winner based on the highest score! Do your best to create a rich game-design using CSS or Bootstrap.
+
+

@@ -2,8 +2,6 @@ let todos = JSON.parse(todo);
 
 let main = document.getElementById("main");
 
-
-
 function displayCards() {
   for (let i in todos) {
     main.innerHTML += `<div id="cards" class="card cards box-shadow" style=" border-radius: 5px">
@@ -62,43 +60,39 @@ function displayCards() {
             >
           </div>
         </div>
-      </div>`
-  };
-
+      </div>`;
+  }
 
   for (let i in todos) {
+    document
+      .getElementsByClassName("priority")
+      [i].addEventListener("click", function () {
+        let count = document.getElementById(`priority${i}`);
+        todos[i].priority++;
+        count.innerHTML = todos[i].priority;
 
-  document.getElementsByClassName("priority")[i].addEventListener("click", function() {
-    let count = document.getElementById(`priority${i}`);
-    todos[i].priority++;
-    count.innerHTML = todos[i].priority;
-    
-    changeColors();
-  })
+        changeColors();
+      });
+  }
 }
 
-};
+displayCards();
 
-
-  displayCards();
-  
-
-  let sort = document.getElementById("sort");
-  sort.addEventListener("click", function(){
-  todos.sort(function(a, b){
+let sort = document.getElementById("sort");
+sort.addEventListener("click", function () {
+  todos.sort(function (a, b) {
     //ascending order
     //return parseFloat(a.priority) - parseFloat(b.priority);
-    //descending order 
+    //descending order
     return parseFloat(b.priority) - parseFloat(a.priority);
   });
-  main.innerHTML= "";
+  main.innerHTML = "";
   displayCards();
-  changeColors()
+  changeColors();
 });
 
 let changeColors = () => {
   for (let i in todos) {
-    
     let count = document.getElementById(`priority${i}`);
     count.innerHTML = todos[i].priority;
     if (todos[i].priority <= 1) {
@@ -111,5 +105,6 @@ let changeColors = () => {
   }
 };
 
+var year = document.getElementById("year");
 
-
+year.innerHTML = new Date().getFullYear();

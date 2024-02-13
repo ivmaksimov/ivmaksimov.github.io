@@ -1,18 +1,37 @@
-
-
-body {
+.main-container {
   display: flex;
   background-color: green;
+  height: 97vh;
 }
 
-.container{
+.task {
+  height: 2em;
+  width: 100%;
+  background-color: rgb(130, 201, 36);
+}
+
+.task > a {
+  text-decoration: none;
+  width: 12em;
+  height: 2em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  margin-left: 2em;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.container {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  
 }
 
-.game{
+.game {
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -25,7 +44,7 @@ body {
   text-align: center;
 }
 
-.names{
+.names {
   border: 5px solid brown;
   border-radius: 20px;
   background-color: burlywood;
@@ -46,7 +65,7 @@ body {
   width: 50%;
 }
 
-.player{
+.player {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -57,7 +76,7 @@ body {
   text-align: center;
 }
 
-button{
+button {
   background-color: burlywood;
   border: none;
   border-radius: 5px;
@@ -66,7 +85,7 @@ button{
 }
 #msg,
 img {
-margin: 10px;
+  margin: 10px;
 }
 
 #msg {
@@ -82,9 +101,8 @@ margin: 10px;
   margin-top: 100px;
 }
 
-img{
+img {
   width: 50%;
-  
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1399.999px) {
@@ -93,11 +111,10 @@ img{
   }
 }
 
-@media screen and  (min-width: 992px) and (max-width: 1199.999px) {
-  .field{
+@media screen and (min-width: 992px) and (max-width: 1199.999px) {
+  .field {
     height: 310px;
   }
-  
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.999px) {
@@ -114,7 +131,6 @@ img{
   #player2count {
     font-size: 22px;
   }
-
 }
 
 @media screen and (min-width: 576px) and (max-width: 767.999px) {
@@ -124,7 +140,8 @@ img{
   .game {
     width: 79%;
   }
-  #countp2, #countp1 {
+  #countp2,
+  #countp1 {
     font-size: 16px;
   }
 
@@ -132,12 +149,9 @@ img{
   #player2count {
     font-size: 22px;
   }
-
-  
-
 }
 
-@media screen and  (max-width: 575.999px) {
+@media screen and (max-width: 575.999px) {
   .field {
     height: 230px;
   }
@@ -151,16 +165,16 @@ img{
     font-size: 12px;
   }
 
-  header{
+  header {
     font-size: 16px;
   }
 
-  .names{
+  .names {
     font-size: 14px;
   }
 
-  #player1count, #player2count{
+  #player1count,
+  #player2count {
     font-size: 14px;
   }
-
 }
